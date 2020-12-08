@@ -18,9 +18,9 @@ Atenció, cal usar en el container --privileged per poder fer els muntatges nfs.
 docker run --rm --name ldap.edt.org -h ldap.edt.org --net 2hisix -p 389:389 -d isx47328890/ldap20
 ```
 
-**PAM container**
+**SSH container**
 ```bash
-docker run --rm --name pam.edt.org -h pam.edt.org --net 2hisix --privileged -it isx47328890/pam20:ldap
+docker run --rm --name ssh.edt.org -h ssh.edt.org --net 2hisix --privileged -it isx47328890/ssh20:base
 ```
 
 [isx47328890/pam20:ldap]:https://hub.docker.com/layers/127854017/isx47328890/pam20/ldap/images/sha256-bb1852c1c05a2e2f1afb411a219bdc3aa37f9fe17b8f62805c11e88622fc943a?context=explore
